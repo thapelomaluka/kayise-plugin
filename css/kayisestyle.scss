@@ -1,0 +1,106 @@
+$imgwrp: 350px;
+ $pcolor: green;
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.regionblock {
+    position: relative;
+
+}
+
+.image_area, .image_areaRegion {
+    position: relative;
+    overflow: hidden;
+    background-color: lighten($color: #000000, $amount: 80);
+    &:hover .overlay {
+        height: 50%;
+        cursor: pointer;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+        height: 0;
+        transition: .5s ease;
+        width: 100%;
+        color: blue;
+        font-weight: bolder;
+        .text{
+            color: $pcolor;
+            font-size: 10px;
+        }
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.image_area {
+    height: 200px;
+}
+
+.image_areaRegion {
+    height: 100%;
+    .overlay {
+        .text{
+            font-size: 9px;
+        }
+    }
+}
+
+.floatbtn {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+
+.floatbtnEdit {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+
+.floatbtn2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.floatbtnEdit2 {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+
+.imgwrapp {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+    .changeBtn {
+        position: absolute;
+        z-index: 999;
+        background-color: gray;
+        padding-top: 10px;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        padding: 0px 54px 0px 0px;
+    }
+}
+
+
+.newBrand {
+    position: absolute;
+}

@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.regionblock {
+  position: relative;
+}
+
+.image_area, .image_areaRegion {
+  position: relative;
+  overflow: hidden;
+  background-color: #cccccc;
+}
+
+.image_area:hover .overlay, .image_areaRegion:hover .overlay {
+  height: 50%;
+  cursor: pointer;
+}
+
+.image_area .overlay, .image_areaRegion .overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 100%;
+  color: blue;
+  font-weight: bolder;
+}
+
+.image_area .overlay .text, .image_areaRegion .overlay .text {
+  color: green;
+  font-size: 10px;
+}
+
+.image_area img, .image_areaRegion img {
+  display: block;
+  max-width: 100%;
+}
+
+.image_area {
+  height: 200px;
+}
+
+.image_areaRegion {
+  height: 100%;
+}
+
+.image_areaRegion .overlay .text {
+  font-size: 9px;
+}
+
+.floatbtn {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+.floatbtnEdit {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+}
+
+.floatbtn2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.floatbtnEdit2 {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+}
+
+.imgwrapp {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgwrapp img {
+  width: 100%;
+}
+
+.imgwrapp .changeBtn {
+  position: absolute;
+  z-index: 999;
+  background-color: gray;
+  padding-top: 10px;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0px 54px 0px 0px;
+}
+
+.newBrand {
+  position: absolute;
+}
+/*# sourceMappingURL=kayisestyle.css.map */
